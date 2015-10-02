@@ -1,0 +1,193 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 13px;
+	height: 100%;
+	background: #F9F9F9;
+	-webkit-box-shadow: inset 0px 0px 0px 1px #DCDCDD;
+       -moz-box-shadow: inset 0px 0px 0px 1px #DCDCDD;
+            box-shadow: inset 0px 0px 0px 1px #DCDCDD;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 13px;
+	background: #F9F9F9;
+	-webkit-box-shadow: inset 0px 0px 0px 1px #DCDCDD;
+       -moz-box-shadow: inset 0px 0px 0px 1px #DCDCDD;
+            box-shadow: inset 0px 0px 0px 1px #DCDCDD;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: transparent;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: transparent;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	width: 9px;
+	margin: 0 2px;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: transparent;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: transparent;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 9px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 9px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspVerticalBar .jspDrag .jspDragTop{
+	background-color: #6F747F;
+	width: 9px;
+	height: 50%;
+	position: relative;
+	top: 2px;
+	-webkit-border-radius: 5px 5px 0 0;
+	   -moz-border-radius: 5px 5px 0 0;
+            border-radius: 5px 5px 0 0;
+}
+
+.jspVerticalBar .jspDrag .jspDragBottom{
+	background-color: #6F747F;
+	width: 9px;
+	height: 50%;
+	position: relative;
+	-webkit-border-radius: 0 0 5px 5px;
+	   -moz-border-radius: 0 0 5px 5px;
+            border-radius: 0 0 5px 5px;
+}
+
+.jspHorizontalBar .jspDrag .jspDragLeft{
+	background-color: #6F747F;
+	width: 50%;
+	height: 9px;
+	position: relative;
+	top: 2px;
+	-webkit-border-radius: 5px 0 0 5px;
+	   -moz-border-radius: 5px 0 0 5px;
+            border-radius: 5px 0 0 5px;
+}
+
+.jspHorizontalBar .jspDrag .jspDragRight{
+	background-color: #6F747F;
+	width: 50%;
+	height: 9px;
+	position: relative;
+	top: -7px;
+	left: 50%;
+	-webkit-border-radius: 0 5px 5px 0;
+	   -moz-border-radius: 0 5px 5px 0;
+            border-radius: 0 5px 5px 0;
+}
+
+.jspVerticalBar .jspArrow.jspArrowUp{
+	background: url('../img/scroll-arrows.png') no-repeat 2px 1px transparent;
+}
+
+.jspVerticalBar .jspArrow.jspArrowDown{
+	background: url('../img/scroll-arrows.png') no-repeat 2px -11px transparent;
+
+}
+
+.jspHorizontalBar .jspArrow.jspArrowLeft{
+	background: url('../img/scroll-arrows.png') no-repeat 1px -21px transparent;
+}
+
+.jspHorizontalBar .jspArrow.jspArrowRight{
+	background: url('../img/scroll-arrows.png') no-repeat -1px -36px transparent;
+
+}
+
+.jspCorner
+{
+	background: #fff;
+	float: left;
+	height: 100%;
+	-webkit-box-shadow: inset 1px 1px 0px 0px #DCDCDD;
+       -moz-box-shadow: inset 1px 1px 0px 0px #DCDCDD;
+            box-shadow: inset 1px 1px 0px 0px #DCDCDD;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
